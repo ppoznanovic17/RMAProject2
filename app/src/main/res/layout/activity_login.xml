@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/logoLogin"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_laptop_chromebook_blue_150dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/titleLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/appName"
+        android:textSize="45dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/myDarkBlue"
+        app:layout_constraintTop_toBottomOf="@id/logoLogin"
+        />
+
+
+
+
+
+    <EditText
+        android:id="@+id/usernameLoginEt"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintTop_toBottomOf="@id/titleLogin"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="19dp"
+        android:hint="@string/usernameLogin"
+        />
+
+
+
+    <EditText
+        android:id="@+id/passwordLoginEt"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:inputType="textPassword"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintTop_toBottomOf="@id/usernameLoginEt"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="19dp"
+        android:hint="@string/passwordLogin"
+        />
+
+    <EditText
+        android:id="@+id/pinLoginEt"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp"
+        app:layout_constraintTop_toBottomOf="@id/passwordLoginEt"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="19dp"
+        android:hint="@string/pinLogin"
+        android:textAlignment="center"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "@string/btnLogin"
+        app:layout_constraintTop_toBottomOf="@id/pinLoginEt"
+        android:layout_marginTop="20dp"
+        android:textSize="19dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAllCaps="false"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="7dp"
+    android:layout_marginBottom="7dp"
+    android:layout_marginRight="9dp"
+    android:layout_marginLeft="9dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/border_grey"
+    android:id="@+id/listReleased">
+
+
+
+    <TextView
+        android:id="@+id/titleNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:layout_width="220dp"
+        android:id="@+id/contentNote"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/deleteNote"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleNote"
+        app:layout_constraintBottom_toBottomOf="@+id/unarchiveNote"
+        />
+
+    <Button
+        android:id="@+id/deleteNote"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ic_delete_blue_24dp"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/editNote"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteNote"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/ic_edit_blue_24dp"
+        android:gravity="center"
+
+        />
+
+    <Button
+        android:id="@+id/archiveNote"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editNote"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/ic_archive_blue_24dp"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/unarchiveNote"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editNote"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:drawableBottom="@drawable/ic_unarchive_blue_24dp"
+        android:gravity="center"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
